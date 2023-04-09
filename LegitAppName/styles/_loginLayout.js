@@ -26,6 +26,10 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
   },
+  Image: {
+    width: '60%',
+    height: '60%',
+  }
 });
 
 export default styles;
