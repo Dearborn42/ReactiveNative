@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <View>
       <Nav />
+      <Text>Home</Text>
     </View>
   );
 }

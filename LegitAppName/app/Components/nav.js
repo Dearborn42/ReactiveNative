@@ -16,10 +16,10 @@ export default function Nav() {
         <TouchableOpacity style={styles.button} onPress={() => pageSwap('Home')}>
             <Text style={styles.buttonText}>Home</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => pageSwap('Message')}>
             <Text style={styles.buttonText}>Messages</Text>        
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => pageSwap('Emails')}>
             <Text style={styles.buttonText}>Emails</Text>
         </TouchableOpacity>
       </View>
