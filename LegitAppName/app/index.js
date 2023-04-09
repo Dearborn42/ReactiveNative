@@ -1,42 +1,40 @@
+import React, { useRef, useState } from 'react';
+import { TextInput, TouchableOpacity, Text, View } from 'react-native';
+import styles from './_loginLayout'
 
-import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity } from 'react-native';
-
-const LoginScreen = () => {
+export default function LoginScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
 
-  const handleLogin = () => {
-    // handle login logic here
-  };
-
+  const loginPage = () => {
+    console.log(email, password);
+    emailRef.current.clear(), passwordRef.current.clear();
+  }
+  
   return (
-    <View>
-      <Text>Login</Text>
+    <View style={styles.container}>
       <TextInput
+        ref={emailRef}
+        style={{...styles.box, marginBottom: 20, marginTop: 20}}
         placeholder="Email"
-        value={email}
-        onChangeText={setEmail}
+        placeholderTextColor="#888"
+        onChangeText={text => setEmail(text)}
       />
       <TextInput
+        ref={passwordRef}
+        style={{...styles.box, marginBottom: 20}}
         placeholder="Password"
-        value={password}
-        onChangeText={setPassword}
+        placeholderTextColor="#888"
         secureTextEntry={true}
+        onChangeText={text => setPassword(text)}
       />
-      <TouchableOpacity onPress={handleLogin}>
-        <Text>Login</Text>
+      <TouchableOpacity 
+        onPress={loginPage} 
+        style={styles.button}>
+        <Text style={styles.buttonText}>Log In</Text>
       </TouchableOpacity>
     </View>
   );
-};
-
-const home = () => {
-  return (
-    <View>
-      <Text>Home</Text>
-    </View>
-  )
-};
-
-export default home;
+}
