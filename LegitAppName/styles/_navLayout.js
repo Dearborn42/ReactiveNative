@@ -8,19 +8,19 @@ const styles = StyleSheet.create({
     topContainer: {
         width: '100%', 
         height: 20, 
-        backgroundColor: 'blue'
+        backgroundColor: '#185708'
     },
     bottomContainer: {
         width: '100%', 
         height: 40,
         flexDirection: 'row',
         justifyContent: 'space-evenly',
-        backgroundColor: 'grey'
+        backgroundColor: '#378914'
     },
     button: {
         width: '30%',
         height: 30,
-        backgroundColor: 'white',
+        backgroundColor: '#8c8c8c',
         borderRadius: 5,
         marginBottom: 'auto',
         marginTop: 'auto'

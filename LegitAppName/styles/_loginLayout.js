@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#185708'
   },
   box: {
     width: '80%',
@@ -12,10 +13,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 5,
     paddingHorizontal: 10,
+    backgroundColor: '#8eff01'
   },
   button: {
     marginTop: 20,
-    backgroundColor: 'blue',
+    backgroundColor: 'black',
     borderRadius: 5,
     paddingHorizontal: 10,
     paddingVertical: 10,
