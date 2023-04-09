@@ -5,7 +5,7 @@ import Nav from './Components/nav';
 
 export default function Home() {
   return (
-    <View>
+    <View style={styles.container}>
       <Nav />
       <Text>Home</Text>
     </View>
