@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, FlatList, Text } from 'react-native';
-import Nav from './Components/nav';
-import styles from '../styles/_messagLayout';
+import styles from '../../styles/_messagLayout';
 
 export default function Message(){
     const [text, setText] = useState('');
@@ -14,7 +13,6 @@ export default function Message(){
 
   return (
     <View style={styles.container}>
-        <Nav />
         <FlatList
             style={styles.flatList}
             data={messages}
