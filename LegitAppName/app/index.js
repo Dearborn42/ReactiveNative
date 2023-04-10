@@ -1,18 +1,14 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import Home from './home';
-import Emails from './email';
-import Message from './message';
 import LoginScreen from './login';
+import MyTabs from './nav';
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Login" component={LoginScreen}/>
-      <Stack.Screen name="Home" component={Home}/>
-      <Stack.Screen name="Emails" component={Emails}/>
-      <Stack.Screen name="Message" component={Message}/>
+      <Stack.Screen name="Login" options={{headerShown: false}} component={LoginScreen}/>
+      <Stack.Screen name="MyTabs" options={{headerShown: false}} component={MyTabs}/>
     </Stack.Navigator>
   );
 }

@@ -14,7 +14,7 @@ export default function LoginScreen() {
   const loginPage = () => {
   if(email == 'TestEmail' && password == 'TestPassword') {
       emailRef.current.clear(), passwordRef.current.clear();
-      navigation.replace('Home');
+      navigation.replace('MyTabs');
   }else{
       console.log('Wrong password or email');
   }

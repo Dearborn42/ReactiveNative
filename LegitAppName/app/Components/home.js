@@ -1,12 +1,10 @@
 import React, { useRef, useState } from 'react';
 import { TextInput, TouchableOpacity, Text, View } from 'react-native';
-import styles from '../styles/_homeLayout';
-import Nav from './Components/nav';
+import styles from '../../styles/_homeLayout';
 
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Nav />
       <Text>Home</Text>
     </View>
   );
