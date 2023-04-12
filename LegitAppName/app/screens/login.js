@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import { TextInput, TouchableOpacity, Text, View, Image, Keyboard } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import styles from '../styles/_loginLayout'
-import myImage from '.././logo.png';
+import myImage from '../.././logo.png';
 
 export default function LoginScreen() {
   const [email, setEmail] = useState('');
@@ -28,7 +28,7 @@ export default function LoginScreen() {
       <Image source={myImage}></Image>
       <TextInput
         ref={emailRef}
-        style={{...styles.box, marginBottom: 20, marginTop: 20}}
+        style={{...styles.box, marginTop: 20}}
         placeholder="Email"
         placeholderTextColor="#888"
         onChangeText={text => setEmail(text)}
@@ -36,7 +36,7 @@ export default function LoginScreen() {
       />
       <TextInput
         ref={passwordRef}
-        style={{...styles.box, marginBottom: 20}}
+        style={styles.box}
         placeholder="Password"
         placeholderTextColor="#888"
         secureTextEntry={true}

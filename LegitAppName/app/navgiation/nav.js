@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Emails from  './Components/email';
-import Home from './Components/home';
-import Message from './Components/message'; 
+import Emails from  '../screens/email';
+import Home from '../screens/home';
+import Message from '../screens/message'; 
 import { Ionicons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons'; 
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, FlatList, Text } from 'react-native';
-import styles from '../../styles/_messagLayout';
+import styles from '../styles/_messagLayout';
 
 export default function Message(){
     const [text, setText] = useState('');
