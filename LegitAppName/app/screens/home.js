@@ -1,10 +1,14 @@
-import styles from '../styles/_homeLayout';
-import { View } from 'react-native'
+import { WebView } from 'react-native-webview';
+import { View } from 'react-native';
+const test = require("../../html/test.html");
 
 
 export default function Home() {
   return (
-    <View style={styles.container}>
+    <View style={{flex: 1}}>
+      <WebView
+        source={test}
+      />
     </View>
   );
 }
