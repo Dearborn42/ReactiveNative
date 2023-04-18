@@ -11,24 +11,22 @@ export default function MyTabs() {
   return (
     <Tab.Navigator>
       <Tab.Screen 
-        name=" " 
-        options={{
-          headerShown: false,         
+        name="Home" 
+        options={{         
           tabBarIcon: () => (<Ionicons name="home" color={'#185708'} size={30} />)
         }} 
         component={Home}
       />
       <Tab.Screen 
-        name="  " 
+        name="Mail" 
         options={
           {headerShown: false, 
           tabBarIcon: () => (<Ionicons name="mail-sharp" size={35} color='#185708' />)
         }} 
         component={Emails} />
       <Tab.Screen 
-        name="   " 
-        options={
-          {headerShown: false,
+        name="Messages" 
+        options={{
             tabBarIcon: () => (<Entypo name="message" size={35} color="#185708" />)
         }} 
         component={Message} />
